@@ -11,6 +11,13 @@
   </head>
 
   <body>
+  <div class="navbar-lewagon d-flex ps-3 pe-3 pt-3">
+   <p>My Anime List</p>
+   <%= link_to lists_path, class: "text-decoration-none" do %>
+   <i class="fa-solid fa-house"></i> Home
+   <% end %>
+   </div>
+   <div class="banner"></div>
     <%= yield %>
   </body>
 </html>
