@@ -1,17 +1,17 @@
-<h1>My Anime List</h1>
-<ul>
+
+<main>
 <% @lists.each do |list| %>
-<div class="card-trip">
-  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-  <div class="card-trip-infos">
-    <div>
+  <div class = "card">
+    <img src="https://play-lh.googleusercontent.com/EEZRsDvcSq11pwv5SVEyVlqUe5r8nP1r4OL6LM8co4hBX_F1nERK1gtZ-Q8o70MJ_d4" alt="">
+    <div class="card-content">
       <h2><%= list.name %></h2>
-      <p>Short description here!</p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
+      </p>
+      <button class="solid-dark-button ">
+        <%= link_to "Check out #{list.name}", list_path(list) %>
+      </button>
     </div>
   </div>
-</div>
-
- <li> <%= link_to list.name, list_path(list) %> </li>
- <% end %>
- <button><%= link_to 'Create List', new_list_path %></button>
-</ul>
+   <% end %>
+</main>

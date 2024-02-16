@@ -12,12 +12,18 @@
 
   <body>
   <div class="navbar-lewagon d-flex ps-3 pe-3 pt-3">
-   <p>My Anime List</p>
-   <%= link_to lists_path, class: "text-decoration-none" do %>
+   <p class="white-text">Weeb Watchlist</p>
+   <%= link_to lists_path, class: "text-decoration-none text-white" do %>
    <i class="fa-solid fa-house"></i> Home
    <% end %>
+   <%= link_to new_list_path, class: "text-decoration-none text-white" do %>
+    <i class="fa-solid fa-plus"></i> Create List
+   <% end %>
    </div>
-   <div class="banner"></div>
+    <div class="banner">
+   <h1 class="banner-title">Weeb Watchlist</h1>
+   <div class="card-overlay"></div>
+   </div>
     <%= yield %>
   </body>
 </html>

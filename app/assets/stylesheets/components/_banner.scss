@@ -1,10 +1,13 @@
 .banner {
   padding: 60px;
   text-align: center;
-  background-image: url("https://play-lh.googleusercontent.com/EEZRsDvcSq11pwv5SVEyVlqUe5r8nP1r4OL6LM8co4hBX_F1nERK1gtZ-Q8o70MJ_d4");
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.30), rgba(27, 24, 26, 0.80)), url("https://play-lh.googleusercontent.com/EEZRsDvcSq11pwv5SVEyVlqUe5r8nP1r4OL6LM8co4hBX_F1nERK1gtZ-Q8o70MJ_d4");
   color: white;
   font-size: 30px;
   background-size: cover;
   height: 50vh;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
