@@ -20,8 +20,10 @@
     <i class="fa-solid fa-plus"></i> Create List
    <% end %>
    </div>
-    <div class="banner">
-   <h1 class="banner-title">Weeb Watchlist</h1>
+    <div class="banner"
+    style= "background-image: url(<%= (@list.present? && @list.photo.attached?) ? cl_image_path(@list.photo.key) : image_path('https://play-lh.googleusercontent.com/EEZRsDvcSq11pwv5SVEyVlqUe5r8nP1r4OL6LM8co4hBX_F1nERK1gtZ-Q8o70MJ_d4') %>)"
+    >
+   <h1 class="banner-title"><%= @list.present? ? @list.name : "Weeb Watchlist" %></h1>
    <div class="card-overlay"></div>
    </div>
     <%= yield %>
