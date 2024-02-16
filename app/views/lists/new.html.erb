@@ -1,8 +1,10 @@
-
+<div class="container">
 <h1 class="white-text">Create a Watchlist</h1>
 <%= simple_form_for @list do |f|%>
- <%= f.input :name%>
- <%= f.submit 'Create New List', { :class => 'button-49-create' }%>
+ <%= f.input :name, { :class => 'form-label' }%>
+ <%= f.input :photo, as: :file %>
+ <%= f.submit 'Create New List', { :class => 'btn btn-dark mb-4' }%>
 <% end %>
-<button class="button-49-back text-decoration-none white-text"><% link_to lists_path%>Back
+<button class="btn btn-dark"><% link_to lists_path%>Back
 </button>
+</div>

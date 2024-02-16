@@ -1,7 +1,8 @@
-<h1>Form here</h1>
+<div class="container">
+<h1>Add Movie to <%= @list.name %></h1>
 <%= simple_form_for [@list, @bookmark] do |f|%>
- <%= f.input :comment %>
+ <%= f.input :comment, { :class => 'form-label' } %>
  <%= f.association :movie %>
- <%= f.submit 'Add Movie' %>
+ <%= f.submit 'Add Movie', { :class => 'btn btn-dark mb-4' } %>
 <% end %>
 <button><%= link_to 'Back', list_path(@list) %></button>
