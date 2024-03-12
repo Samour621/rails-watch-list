@@ -1,24 +1,39 @@
-# README
+📚 Weeb Watchlist
+Categorize and keep your favorite anime shows organized with Weeb Watch!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+DROP SCREENSHOT HERE
+App home: https://WHATEVER.herokuapp.com
 
-Things you may want to cover:
+Getting Started
+Setup
+Install gems
 
-* Ruby version
+bundle install
+ENV Variables
+Create .env file
 
-* System dependencies
+touch .env
+Inside .env, set these variables. For any APIs, see group Slack channel.
 
-* Configuration
+CLOUDINARY_URL=your_own_cloudinary_url_key
+DB Setup
+rails db:create
+rails db:migrate
+rails db:seed
+Run a server
+rails s
+Built With
+Rails 7 - Backend / Front-end
+SCSS/CSS/Bootstrap - Front-end / Styling
+PostgreSQL - Database
+Figma — Prototyping
+Acknowledgements
+Inspired by myanimelist.com, but with better visuals and UI styling!
 
-* Database creation
+Team Members
+Sarah Amour
+Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+License
+This project is licensed under the MIT License
